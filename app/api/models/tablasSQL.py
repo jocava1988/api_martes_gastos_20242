@@ -29,17 +29,17 @@ class Gastos(Base):
 
 class categoria(Base):
     __tablename__='categorias'
-    #id
-    #nombre
-    #descripcion
-    #fotocategoria
-    pass
+    id(Integer, primary_key=True, autoincrement=True)
+    nombre=column(String(50))
+    descripcion=column(String(50))
+    fotocategoria=column(String)
+   
 
 class ingrsos(Base):
     __tablename__='Ingresos'
-    #id
-    #valor
-    #descripcion
-    #fecha
-    pass
+    id=column(Integer, primary_key=True, autoincrement=True)
+    valor=column(Float)
+    descripcion=column(String(50))
+    fecha=column(Date)
+    
 
